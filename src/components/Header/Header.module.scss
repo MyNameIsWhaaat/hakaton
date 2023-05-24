@@ -1,0 +1,69 @@
+.root{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 7rem;
+    border-bottom: solid 0.1rem rgba(32, 0, 57, 1);
+    margin-bottom: 3rem;
+}
+.HeaderItems{
+    margin-top: 2.5rem;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    
+    
+
+    a{
+        text-decoration: none;
+        color: rgba(32, 0, 57, 1);
+        position: relative;
+        font-size: 27px;
+    }
+    
+}
+
+.HeaderItems :after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0; 
+    width: 0;
+    height: 3px; /* Высота линии */
+    background-color: rgba(125, 5, 219, 1);; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+.HeaderItems :hover:after{
+    content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0; 
+    height: 3px; /* Высота линии */
+    background-color: rgba(125, 5, 219, 1); /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+      
+}
+
+.Logo{
+    font-size: 40px;
+    position: absolute;
+    left: 2rem;
+    top: 1.7rem;
+}
+
+.LogIn{
+    font-size: 30px;
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+    padding: 0.5rem;
+    border: solid 0.2rem rgba(32, 0, 57, 1);
+    border-radius: 1rem;
+    text-decoration: none;
+    background-color: white;
+    
+    
+}

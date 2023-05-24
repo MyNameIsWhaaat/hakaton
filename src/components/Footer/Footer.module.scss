@@ -1,0 +1,61 @@
+.root{
+    background-color: aqua;
+    width: 100%;
+    background: linear-gradient(135deg, rgba(50, 0, 114, 1), rgba(229, 67, 255, 1), rgba(243, 106, 188, 1));
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    margin-top: 2rem;
+}
+
+.SuperDiv{
+    width: 70%;
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    a{
+        font-size: 25px;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        margin-top: 1rem;
+        
+    }
+
+    span{
+        font-size: 25px;
+        color: white;
+        margin-top: 1rem;
+        
+    }
+    
+}
+ 
+
+.FerstDiv{
+    display: flex;
+    flex-direction: column;
+}
+
+.SecondDiv{
+    display: flex;
+    flex-direction: column;
+}
+
+.ThirdDiv{
+    display: flex;
+    flex-direction: column;
+}
+
+.Lable{
+
+    margin: auto;
+
+    span{
+        color: white;
+        font-size: 50px;
+        margin-top: 1rem;
+    }
+    
+}

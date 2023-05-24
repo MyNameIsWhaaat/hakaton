@@ -1,0 +1,46 @@
+.root{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.Info{
+    width: 50%;
+    display: flex;
+    margin: auto;
+    margin-left: 5rem;
+    flex-direction: column;
+}
+
+.AllCartsContainer{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.FirstCartsContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+.SecondCartsContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.SpanOne{
+    font-size: 50px;
+}
+
+.SpanTwo{
+    margin-top: 2rem;
+    font-size: 40px;
+}
+
+.Finans{
+    color: rgba(125, 5, 219, 1);
+}

@@ -1,24 +1,32 @@
 import logo from './logo.svg';
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import Header from '../src/components/Header/Header'
+import Footer from '../src/components/Footer/Footer'
+import HomeOff from '../src/pages/HomeOff'
+import HomeOn from '../src/pages/HomeOn'
+import Authorization from './pages/Authorization';
+import AccountClient from './pages/AccountClient/AccountClient';
 
 function App() {
+  const flag = false;
+  if(!flag){
+    return (
+      <>
+        <Authorization/>
+      </>      
+    )
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>   
+      <Header/>
+      <Routes>
+        <Route path='/' element = {<AccountClient/>}/>
+        <Route path='/on' element = {<HomeOn/>}/>
+        <Route path='/aut' element = {<Authorization/> }/>
+      </Routes>
+      <Footer/>
+    </>
   );
 }
 
