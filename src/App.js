@@ -11,16 +11,17 @@ import Meneger from '../src/pages/AccountMeneger/AccountMeneger';
 
 function App() {
 
-  const flag = "meneger";
+  const flag = "meneer";
   //const flag = "AutUser";
   //const flag = "";
   
   if(flag==="meneger"){
     return (
       <>
-        <Header title1="Профиль" title2="Новые" title3="В обработке" title4="Завершенные"/>
+        
           <Routes>
-            <Route path='/' element = {<Meneger/>}/>
+            <Route path='/' element = {<Authorization/>}/>
+            <Route path='/pisichka'/>
           </Routes>
       </>      
     )
@@ -38,10 +39,11 @@ function App() {
   else
   return (
     <>   
-      <Header title1="Главная" title2="Финансирование" title3="Кредиты" title4="Факторинг" title5="Другое"/>
+      
         <Routes>
           <Route path='/' element = {<HomeOff/>}/>
         </Routes>
+        <Footer/>
     </>
   );
 

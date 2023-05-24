@@ -8,7 +8,14 @@
         width: 25rem;
         height: 3.5rem;
         border-radius: 0.5rem;
-        margin-bottom: 1rem;
+        margin-bottom: 2.5rem;
+        font-size: 20px;
+
+        &::placeholder {
+            font-size: 20px;
+            opacity: 0.5;
+            color: rgb(0, 0, 0);
+        }
         
     }
 
@@ -24,4 +31,18 @@
         text-decoration: none;
         margin-top: 4rem;
     }
+}
+
+.ErrorPas{
+    color: red;
+    position: absolute;
+    margin-top: 0.2rem;
+    margin-left: 24.5rem;
+}
+
+.ErrorEm{
+    color: red;
+    position: absolute;
+    margin-top: 5rem;
+    margin-left: 24.5rem;
 }
