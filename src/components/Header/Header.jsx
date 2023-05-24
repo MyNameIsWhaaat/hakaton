@@ -2,7 +2,7 @@ import React from "react";
 import styles from './Header.module.scss';
 import { NavLink } from "react-router-dom";
 
-const Header = ({title1, title2, title3, title4, title5}) =>{
+const Header = ({title1, title2, title3, title4, title5, url}) =>{
     return(
         <div className={styles.root}>
             <div className = {styles.Logo}><b>ROWI tech</b></div>
@@ -13,7 +13,7 @@ const Header = ({title1, title2, title3, title4, title5}) =>{
                 <NavLink to="/">{title4}</NavLink>
                 <NavLink to="/">{title5}</NavLink>
             </div>
-            <NavLink to="/aut" className={styles.LogIn}>Личный кабинет</NavLink>
+            <NavLink to={url} className={styles.LogIn}>Личный кабинет</NavLink>
         </div>
     );
 }
