@@ -1,0 +1,122 @@
+.ma_profil{
+    background-color: rgba(248, 247, 255, 1);
+
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding-left: 24px;
+    padding-bottom: 24px;
+}
+
+.about_ma{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    height: 150px;
+    width: auto;
+    padding-left: 24px;
+    padding-right: 0;
+    margin: 0;
+
+}
+
+.ab_ma_avatar{
+    width: 100px;
+    height: 100px;
+}
+
+.ab_ma_av_img{
+    width: 100px;
+    height: 100px; 
+}
+
+.ab_ma_info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-left: 18px;
+}
+
+.ab_ma_name{
+    font-weight: 500;
+    font-size: 32px;
+    margin: 0;
+}
+
+.ab_ma_product{
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0;
+    margin-top: 12px;
+}
+
+.ma_pr_filters{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    padding: 0px 24px;
+}
+
+.ab_ma_se_input{
+    padding: 0;
+    padding-left: 80px;
+    width: 600px;
+    height: 60px;
+    margin-right: 48px;
+
+    border: 1px solid;
+    border-radius: 10px;
+
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+
+    
+}
+
+.ma_select{
+    width: 200px;
+    height: 60px;
+
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+}
+/*не удалять, часть стилей dropdown*/
+.css-1hb7zxy-IndicatorsContainer{
+    width: 60px;
+    height: 60px;
+}
+/*не удалять, часть стилей dropdown*/
+.css-tj5bde-Svg{
+    width: 60px;
+    height: 30px;
+
+    color: rgba(18, 0, 32, 0.6);
+}
+
+.ma_pr_table_name{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    width: 1000px;
+    height: 60px;
+    margin-top: 10px;
+    padding-left: 53px;
+
+    background-color: white;
+    border-radius: 12px;
+}
+
+.ma_pr_ta_na_text{
+    margin-right: 200px;
+    font-size: 18px;
+}

@@ -7,25 +7,41 @@ import HomeOff from '../src/pages/HomeOff'
 import HomeOn from '../src/pages/HomeOn'
 import Authorization from './pages/Authorization';
 import AccountClient from './pages/AccountClient/AccountClient';
+import Meneger from '../src/pages/AccountMeneger/AccountMeneger';
 
 function App() {
-  const flag = false;
-  if(!flag){
+
+  const flag = "meneger";
+  //const flag = "AutUser";
+  //const flag = "";
+  
+  if(flag==="meneger"){
     return (
       <>
-        <Authorization/>
+        <Header title1="Профиль" title2="Новые" title3="В обработке" title4="Завершенные"/>
+          <Routes>
+            <Route path='/' element = {<Meneger/>}/>
+          </Routes>
       </>      
     )
   }
+  else if(flag==="AutUser")
   return (
     <>   
-      <Header/>
-      <Routes>
-        <Route path='/' element = {<AccountClient/>}/>
-        <Route path='/on' element = {<HomeOn/>}/>
-        <Route path='/aut' element = {<Authorization/> }/>
-      </Routes>
-      <Footer/>
+      <Header title1="Главная" title2="Финансирование" title3="Кредиты" title4="Факторинг" title5="Другое"/>
+        <Routes>
+          <Route path='/' element = {<HomeOn/>}/>
+        </Routes>
+    </>
+  );
+  
+  else
+  return (
+    <>   
+      <Header title1="Главная" title2="Финансирование" title3="Кредиты" title4="Факторинг" title5="Другое"/>
+        <Routes>
+          <Route path='/' element = {<HomeOff/>}/>
+        </Routes>
     </>
   );
 }

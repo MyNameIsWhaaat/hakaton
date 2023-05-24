@@ -1,0 +1,51 @@
+.ma_pr_table_info{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    width: 1000px;
+    height: 60px;
+    margin-top: 20px;
+    padding-left: 53px;
+
+    background-color: white;
+    border-radius: 12px;
+}
+
+.ma_pr_ta_na_te_1{
+    margin-right: 150px;
+    font-size: 18px;
+}
+.ma_pr_ta_na_te_2{
+    margin-right: 130px;
+    font-size: 18px;
+    width: 170px;
+    padding: 0;
+}
+.ma_pr_ta_na_te_3{
+    margin-right: 140px;
+    font-size: 18px;
+    width: 120px;
+    padding: 0;
+}
+.ma_pr_ta_na_te_4{
+    margin-right: 100px;
+    font-size: 18px;
+}
+
+.ma_pr_ta_na_button{
+    width: 80px;
+    height: 30px;
+
+    text-decoration: none;
+    font-size: 18px;
+    color: rgba(18, 0, 32, 1);
+
+    border: 3px solid #120020;
+    border-radius: 8px;  
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
